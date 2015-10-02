@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BlueTube</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+		<!-- FA -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<header>
+			<h1>BlueTube</h1>
+
+			<form class="form-inline" id="search-term">
+				<input class="form-control" type="text" id="query" placeholder="Search your movie...">
+				<button class="btn btn-info" id="searchButton" type="submit">BlueTube It!</button>
+				<button class="btn btn-info" id="clearhButton" type="submit"><i class="fa  fa-ban"></i></button>
+			</form>
+
+		</header>	
+		<main>
+			<div class="container">
+				<div class="search-tip">
+					<h1>Your search will appear here, bro.</h1>
+				</div>
+				<div class="col-md-10 col-md-offset-1 searchbox">
+					<div id="search-results">
+					
+				</div>
+				</div>
+			</div>
+		</main>	
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Waves -->
+		<script src="waves/waves.min.js"></script>
+		<!--My Javascript-->
+		<script src="js/app.js"></script>
+
+		<script>
+			Waves.init();
+			Waves.attach('.btn', ['waves-button', 'waves-float']);
+			Waves.attach('.waves-image');
+		</script>
+	</body>
+</html>

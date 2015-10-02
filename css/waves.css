@@ -1,0 +1,86 @@
+/*
+Error: wrong number of arguments (1 for 2+) for `radial-gradient'
+        on line 55 of /Users/Home/Thinkful/Practice/BlueTube/sass/waves.scss
+
+50:         background: rgba(0,0,0,0.2);
+51:         $gradient: rgba(0,0,0,0.2) 0,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 60%,rgba(255,255,255,0) 70%;
+52:         background: -webkit-radial-gradient($gradient);
+53:         background: -o-radial-gradient($gradient);
+54:         background: -moz-radial-gradient($gradient);
+55:         background: radial-gradient($gradient);
+56:         @include waves-transition(all 0.5s ease-out);
+57:         -webkit-transition-property: -webkit-transform, opacity;
+58:         -moz-transition-property: -moz-transform, opacity;
+59:         -o-transition-property: -o-transform, opacity;
+60:         transition-property: transform, opacity;
+
+Backtrace:
+/Users/Home/Thinkful/Practice/BlueTube/sass/waves.scss:55
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:303:in `reformat_argument_error'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:146:in `rescue in _perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:123:in `_perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:17:in `block in render'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:16:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:209:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:52:in `block in <main>'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `call'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: wrong number of arguments (1 for 2+) for `radial-gradient'\A         on line 55 of /Users/Home/Thinkful/Practice/BlueTube/sass/waves.scss\A \A 50:         background: rgba(0,0,0,0.2);\A 51:         $gradient: rgba(0,0,0,0.2) 0,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 60%,rgba(255,255,255,0) 70%;\A 52:         background: -webkit-radial-gradient($gradient);\A 53:         background: -o-radial-gradient($gradient);\A 54:         background: -moz-radial-gradient($gradient);\A 55:         background: radial-gradient($gradient);\A 56:         @include waves-transition(all 0.5s ease-out);\A 57:         -webkit-transition-property: -webkit-transform, opacity;\A 58:         -moz-transition-property: -moz-transform, opacity;\A 59:         -o-transition-property: -o-transform, opacity;\A 60:         transition-property: transform, opacity;"; }

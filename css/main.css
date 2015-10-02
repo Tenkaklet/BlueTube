@@ -1,0 +1,69 @@
+/*-- VARIABLES & THINGS THAT CAN BE INSTALLED --*/
+/*-- FONTS & IMPORTS --*/
+@font-face {
+  font-family: 'Blogger';
+  src: url(../fonts/BloggerSans.ttf); }
+/*-- GENERAL STYLES --*/
+body {
+  background-color: #407ED7; }
+
+a {
+  color: #000;
+  transition: color 0.15s ease-in-out; }
+  a:focus, a:active {
+    color: #000; }
+  a:hover {
+    color: #18bc9c;
+    text-decoration: none; }
+
+#searchButton {
+  color: #FFF;
+  border: 1px solid #000; }
+  #searchButton:hover, #searchButton:focus, #searchButton:active {
+    color: #FFF;
+    border: 1px solid #000; }
+
+#clearhButton {
+  color: #FFF;
+  background-color: #e74c3c;
+  border: 1px solid #000; }
+  #clearhButton:hover, #clearhButton:focus, #clearhButton:active {
+    color: #FFF;
+    border: 1px solid #000; }
+
+/*-- HEADER --*/
+header {
+  padding: 37px 0;
+  text-align: center; }
+  header h1 {
+    color: #FFF;
+    font-family: 'Blogger'; }
+
+/*-- MAIN --*/
+main {
+  margin: 0 auto 10px auto;
+  background-color: #ECF0F1;
+  border: 2px solid #000;
+  height: 65vh;
+  border-radius: 50px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  main .search-tip {
+    color: #A9A9A9; }
+
+.searchbox #search-results img {
+  width: 206px;
+  min-height: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  transition: all 0.2s ease-in-out; }
+  .searchbox #search-results img:hover {
+    -webkit-filter: grayscale(0%); }
+
+/*-- FOOTER --*/
+/*-- SPECIALS --*/
+/*-- MEDIA QUERIES --*/

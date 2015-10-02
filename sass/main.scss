@@ -1,0 +1,123 @@
+
+
+
+/*-- VARIABLES & THINGS THAT CAN BE INSTALLED --*/
+$body-color: #407ED7;
+
+/*-- FONTS & IMPORTS --*/
+@font-face {
+	font-family: 'Blogger';
+	src: url(../fonts/BloggerSans.ttf);
+}
+
+
+/*-- GENERAL STYLES --*/
+
+body {
+	background-color: $body-color;
+
+}
+a {
+	color: #000;
+	transition: color 0.15s ease-in-out;
+	&:focus, &:active {
+		color: #000;
+	}
+	&:hover {
+		color: #18bc9c;
+		text-decoration: none;
+	}
+}
+#searchButton {
+	color: #FFF;
+	border: 1px solid #000;
+	&:hover, &:focus, &:active {
+		color: #FFF;
+		border: 1px solid #000;
+	}
+}
+#clearhButton {
+	color: #FFF;
+	background-color: #e74c3c;
+	border: 1px solid #000;
+	&:hover, &:focus, &:active {
+		color: #FFF;
+		border: 1px solid #000;
+	}
+}
+
+
+/*-- HEADER --*/
+
+header {
+	padding: 37px 0;
+	text-align: center;
+	h1 {
+		color: #FFF;
+		font-family: 'Blogger';
+	}
+	#search-term {
+
+	}
+}
+
+
+
+
+
+/*-- MAIN --*/
+
+main {
+	margin: 0 auto 10px auto;
+	background-color: #ECF0F1;
+	border: 2px solid #000;
+	height: 65vh;
+	border-radius: 50px;
+	width: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;		
+	text-align: center;
+
+	.search-tip {
+		color: #A9A9A9;
+	}
+}
+
+// #Search Results 
+
+.searchbox {
+
+	#search-results {
+	img {
+		width: 206px;
+		min-height: 100%;
+		margin: 10px;
+		border-radius: 10px;
+		-webkit-filter: grayscale(100%);
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			-webkit-filter: grayscale(0%);
+		}		
+	}
+}
+}
+
+
+
+
+/*-- FOOTER --*/
+
+
+
+
+
+/*-- SPECIALS --*/
+
+
+
+
+/*-- MEDIA QUERIES --*/
+
+
