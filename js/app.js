@@ -34,7 +34,7 @@ $(function() {
 		$(document).keydown(function() {
 			if (event.which === 13 && $('#query').val() !== "") {
 				$('#searchButton').trigger('click');				
-				$('.search-tip').slideup(100);		
+				$('.search-tip').fadeOut(100);		
 			}
 		});
 });
