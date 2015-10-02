@@ -19,14 +19,14 @@ $(function() {
 			// Calls the getRequest function to run what this function does.
 			getRequest(searchTerm);
 			$('#query').val('');
-			$('.search-tip').slideup(100);					
+			$('.search-tip').fadeOut(100);					
 		}
 	});
 
 	//Clearbutton clears the search
 		$('#clearhButton').click(function () {
 			$('#search-results').empty();
-			$('.search-tip').slideDown('slow');
+			$('.search-tip').fadeIn('slow');
 			
 		});
 
